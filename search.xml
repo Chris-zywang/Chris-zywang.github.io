@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>一个月复习算法总结</title>
+      <link href="/2026/03/29/%E4%B8%80%E4%B8%AA%E6%9C%88%E5%A4%8D%E4%B9%A0%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+      <url>/2026/03/29/%E4%B8%80%E4%B8%AA%E6%9C%88%E5%A4%8D%E4%B9%A0%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一个月复习算法总结"><a href="#一个月复习算法总结" class="headerlink" title="一个月复习算法总结"></a>一个月复习算法总结</h1><ol><li><p>&#x3D;&#x3D;双指针相关&#x3D;&#x3D;：<br>先想暴力，如果发现某个特性：<code>i移动过程中，发现j只能往一个方向动</code>，则可以用双指针。<br>如果j只能往i移动方向相同的方向动，则i和j同向枚举，如果j只能往i移动方向相同反的方向动，则i和j反向</p></li><li><p>&#x3D;&#x3D;递归相关&#x3D;&#x3D;：<br>假设子问题已经做出来，在基础上想<br>记得写递归终止条件，即:什么时候return</p></li><li><p>&#x3D;&#x3D;前缀和与差分&#x3D;&#x3D;：<br>记得从1开始，不要从0开始</p></li><li><p>&#x3D;&#x3D;单调数列&#x3D;&#x3D;，可以想到二分</p></li><li><p>&#x3D;&#x3D;模拟栈&#x3D;&#x3D;，第一个入栈的是从下标1开始，tt表示栈里的个数<br>&#x3D;&#x3D;模拟队列&#x3D;&#x3D;，第一个入队的是从下标0开始<br>tt在右边，hh在左边</p></li><li><p>&#x3D;&#x3D;感悟&#x3D;&#x3D;：<br>多写注释<br>  看不懂就看题解，看其他视频</p></li><li><p>&#x3D;&#x3D;哈希&#x3D;&#x3D;：<br>开放寻址法的时候：find函数返回的是 x要哈希成的数组中的位置</p></li><li><p>&#x3D;&#x3D;DFS&#x3D;&#x3D;：</p><p><img src="https://pic1.imgdb.cn/item/69c94c3e3833931b653ea25d.png"></p><p>要写结束条件</p><p>回溯，恢复现场</p><p>本质上就是枚举，模拟题</p><p>dfs可以想 ，在模拟的过程中，需要用到什么，如果可以用下一个状态表示，则dfs函数返回要用到的东西，比如“树的重心”</p><p>参数怎么想：一个是枚举的顺序，参数u，其他的具体题目具体分析，可以通过搜索树来想，参数常通过：当前状态，决策信息，约束信息组成</p><ul><li>全局参数</li><li>形参</li></ul><p>每次写完 DFS，自己快速问这 7 个问题：</p><ol><li>递归参数到底表示什么？</li><li>终止条件有没有写对？</li><li>每个分支结束后该不该 <code>return</code>？</li><li>修改的状态有没有完整恢复？</li><li>判断依据和修改对象是不是同一份数据？</li><li>题目要一个解还是所有解？</li><li>全局变量有没有在新数据前重置？</li></ol><p>backup的用法</p><ul><li><p>第一种：为了“恢复现场”</p><p>例如：</p><ul><li>当前状态太复杂，不好手动撤销</li><li>那就先备份，搜完后还原</li></ul><p>这是真正意义上的 backup。</p></li><li><p>第二种：为了“保存答案”</p><p>例如：</p><ul><li>当前这组解很好</li><li>后面还要继续搜索</li><li>所以先存下来</li></ul><p>这更像 <code>ans</code>，只是很多人也会写成 <code>backup</code></p></li></ul></li><li><p>&#x3D;&#x3D;BFS&#x3D;&#x3D;:</p><p><em>距离dist数组，可以初始化为-1，来代替st标记数组</em></p></li><li><p>&#x3D;&#x3D;<strong>做题习惯</strong>&#x3D;&#x3D;：</p></li></ol><ul><li><p>每开一个数组，都要想一下初始化成什么</p></li><li><p>想要不要开ll,int最大是<code>2.1e9</code> ,LL最大是<code>9.2e18</code></p></li><li><p><code>2^20</code> 大致为<code>10^6</code></p></li><li><p>Debug:先通读一遍，再注释大法，再模拟代码流程等等</p></li><li><p>多用函数，把代码分成不同小块，方便整体思路，也方便debug</p></li><li><p>多组测试用例的时候，记得重新初始化全局变量</p></li></ul><ol start="11"><li><p>&#x3D;&#x3D;dp&#x3D;&#x3D;：状态表示（集合、属性）+状态转移</p><p>思考状态转移的时候，可以想<code>f[i][j]</code>最后一步是怎么来的</p><p>计算时间复杂度：状态表示*状态转移操作复杂度</p></li></ol><ul><li><p>&#x3D;&#x3D;待学内容&#x3D;&#x3D;：<br>看stl常用操作，比如string的</p><p>cin的输入，char数组的输入</p></li></ul><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2026/02/26/hello-world/"/>
       <url>/2026/02/26/hello-world/</url>
